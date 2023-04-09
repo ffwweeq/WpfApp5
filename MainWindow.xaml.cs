@@ -25,6 +25,8 @@ namespace WpfApp5
             InitializeComponent();
         }
 
+        string strInput;
+        double douOutput;
         private void txtc_Click(object sender, RoutedEventArgs e)
         {
             double h, w, bmi;
@@ -40,17 +42,17 @@ namespace WpfApp5
 
         private void txta_KeyUp(object sender, KeyEventArgs e)
         {
-
+            strInput = txta.Text;
         }
 
         private void txtb_KeyUp(object sender, KeyEventArgs e)
         {
-
+            strInput = txtb.Text;
         }
 
         private void txtd_KeyUp(object sender, KeyEventArgs e)
         {
-
+            strInput = txtd.Text;
         }
     }
 }
