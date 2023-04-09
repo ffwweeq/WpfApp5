@@ -43,6 +43,10 @@ namespace WpfApp5
         private void txta_KeyUp(object sender, KeyEventArgs e)
         {
             strInput = txta.Text;
+            if (double.TryParse(strInput, out douOutput) == false)
+            {
+
+            }
         }
 
         private void txtb_KeyUp(object sender, KeyEventArgs e)
