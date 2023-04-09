@@ -53,6 +53,11 @@ namespace WpfApp5
         private void txtb_KeyUp(object sender, KeyEventArgs e)
         {
             strInput = txtb.Text;
+            if (double.TryParse(strInput, out douOutput) == false)
+            {
+                txtb.Text = "";
+                txtd.Text = "請勿輸入文字";
+            }
         }
 
         private void txtd_KeyUp(object sender, KeyEventArgs e)
