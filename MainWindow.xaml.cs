@@ -27,7 +27,15 @@ namespace WpfApp5
 
         private void txtc_Click(object sender, RoutedEventArgs e)
         {
+            double h, w, bmi;
 
+            w = Convert.ToDouble(txta.Text) / 100.0;
+
+            h = Convert.ToDouble(txtb.Text) ;
+
+            bmi = w / h * h;
+
+            txtd.Text = bmi.ToString("#0.00");
         }
 
         private void txta_KeyUp(object sender, KeyEventArgs e)
