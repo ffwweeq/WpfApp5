@@ -29,11 +29,11 @@ namespace WpfApp5
         {
             double h, w, bmi;
 
-            w = Convert.ToDouble(txta.Text) / 100.0;
+            w = Convert.ToDouble(txta.Text);
 
-            h = Convert.ToDouble(txtb.Text) ;
+            h = Convert.ToDouble(txtb.Text) / 100.0;
 
-            bmi = w / h * h;
+            bmi = w / (h * h);
 
             txtd.Text = bmi.ToString("#0.00");
         }
