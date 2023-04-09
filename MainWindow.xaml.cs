@@ -24,5 +24,25 @@ namespace WpfApp5
         {
             InitializeComponent();
         }
+
+        private void txtc_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void txta_KeyUp(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void txtb_KeyUp(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void txtd_KeyUp(object sender, KeyEventArgs e)
+        {
+
+        }
     }
 }
