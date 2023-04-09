@@ -45,7 +45,8 @@ namespace WpfApp5
             strInput = txta.Text;
             if (double.TryParse(strInput, out douOutput) == false)
             {
-
+                txta.Text = "";
+                txtd.Text = "請勿輸入文字";
             }
         }
 
